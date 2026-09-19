@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashant Soni | B.Tech CSE • Web Developer & Graphic Designer</title>
+  <meta name="description"
+    content="Portfolio of Prashant Soni - B.Tech CSE Student, Full-Stack Web Developer, and Creative Graphic Designer. Crafting high-performance digital experiences with code and visual artistry.">
+  <meta name="keywords"
+    content="Prashant Soni, Portfolio, BTech CSE, Web Developer, Graphic Designer, UI/UX Designer, Frontend Developer, React, JavaScript, Figma, Photoshop">
+  <meta name="author" content="Prashant Soni">
+  <meta name="theme-color" content="#090a10">
+
+  <!-- OpenGraph / Social Media -->
+  <meta property="og:title" content="Prashant Soni | Web Developer & Graphic Designer">
+  <meta property="og:description"
+    content="Explore cutting-edge web applications, UI/UX designs, and graphic artwork crafted by Prashant Soni.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Custom Interactive Cursor -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Ambient Dynamic Particle Canvas -->
+  <canvas id="ambientCanvas"></canvas>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" id="brandLogo">
+        <span class="brand-badge">&lt;PS/&gt;</span>
+        <span class="brand-name">PRASHANT<span class="highlight">.SONI</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#graphics" class="nav-link">Graphics Gallery</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Hire Me</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2"
+            fill="none">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal-item">
+            <span class="status-indicator"></span>
+            <span>B.Tech CSE Student • Open to Freelance & Internships</span>
+          </div>
+
+          <h1 class="hero-title reveal-item">
+            Architecting <span class="gradient-text text-glow">Smart Code.</span> <br>
+            Designing <span class="gradient-text-alt text-glow">Pure Art.</span> <br>
+            <span class="hero-subline">
+              <span class="typewriter-prefix">Hi, I'm Prashant RAPPER — </span>
+              <span class="typewriter-container">
+                <span class="typewriter-text" id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+              </span>
+            </span>
+          </h1>
+
+          <p class="hero-description reveal-item">
+            I am <strong>Prashant Soni</strong>, a passionate <strong>B.Tech Computer Science & Engineering</strong>
+            student merging engineering precision with creative visual design. I build high-performance <strong>Web
+              Applications</strong> and craft iconic <strong>Graphic & Brand Artworks</strong>.
+          </p>
+
+          <div class="hero-cta-group reveal-item">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#graphics" class="btn btn-secondary">
+              <span>Design Gallery</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-row reveal-item">
+            <div class="stat-pill">
+              <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-pill">
+              <span class="stat-number" data-target="35">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Graphic Designs</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-pill">
+              <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+              <span class="stat-label">Passion & Dedication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Tilting Hero Visual Card -->
+        <div class="hero-visual reveal-item" id="heroTiltCard">
+          <div class="visual-card-wrapper">
+            <div class="visual-card-glow"></div>
+            <div class="visual-card-inner">
+              <div class="card-image-box">
+                <img src="assets/hero.jpg" alt="Prashant Soni Creative Technologist" class="hero-avatar-img">
+                <div class="image-overlay-scanline"></div>
+              </div>
+              <div class="floating-badge badge-top-left">
+                <div class="badge-icon dev-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="badge-text">
+                  <span class="badge-title">Full-Stack Dev</span>
+                  <span class="badge-subtitle">Clean Architecture</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-bottom-right">
+                <div class="badge-icon design-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                    <path d="M2 2l7.586 7.586"></path>
+                    <circle cx="11" cy="11" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="badge-text">
+                  <span class="badge-title">Graphic Designer</span>
+                  <span class="badge-subtitle">Figma • PS • AI</span>
+                </div>
+              </div>
+              <div class="floating-tag cse-tag">
+                <span>🎓 B.Tech CSE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Tech Floating Marquee -->
+      <div class="tech-marquee-wrapper">
+        <div class="marquee-track">
+          <div class="marquee-item"><span class="icon">⚡</span> JavaScript ES6+</div>
+          <div class="marquee-item"><span class="icon">⚛️</span> React.js</div>
+          <div class="marquee-item"><span class="icon">🎨</span> Figma UI/UX</div>
+          <div class="marquee-item"><span class="icon">🖌️</span> Adobe Photoshop</div>
+          <div class="marquee-item"><span class="icon">📐</span> Adobe Illustrator</div>
+          <div class="marquee-item"><span class="icon">💻</span> B.Tech Computer Science</div>
+          <div class="marquee-item"><span class="icon">🌐</span> Modern CSS & HTML5</div>
+          <div class="marquee-item"><span class="icon">🚀</span> Node.js & APIs</div>
+          <div class="marquee-item"><span class="icon">📦</span> Git & GitHub</div>
+          <!-- Repeat for infinite marquee effect -->
+          <div class="marquee-item"><span class="icon">⚡</span> JavaScript ES6+</div>
+          <div class="marquee-item"><span class="icon">⚛️</span> React.js</div>
+          <div class="marquee-item"><span class="icon">🎨</span> Figma UI/UX</div>
+          <div class="marquee-item"><span class="icon">🖌️</span> Adobe Photoshop</div>
+          <div class="marquee-item"><span class="icon">📐</span> Adobe Illustrator</div>
+          <div class="marquee-item"><span class="icon">💻</span> B.Tech Computer Science</div>
+          <div class="marquee-item"><span class="icon">🌐</span> Modern CSS & HTML5</div>
+          <div class="marquee-item"><span class="icon">🚀</span> Node.js & APIs</div>
+          <div class="marquee-item"><span class="icon">📦</span> Git & GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title">Where <span class="gradient-text">Engineering</span> Meets <span
+              class="gradient-text-alt">Aesthetics</span></h2>
+          <p class="section-subtitle">A high-energy B.Tech CSE student passionate about transforming complex logic into
+            breathtaking digital products.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card intro-card reveal-item">
+            <div class="card-icon-header">
+              <div class="card-glow-icon purple">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <span class="card-index">01</span>
+            </div>
+            <h3 class="card-heading">Who I Am</h3>
+            <p class="card-text">
+              I'm <strong>Prashant Soni</strong>, currently pursuing my Bachelor of Technology in <strong>Computer
+                Science & Engineering (CSE)</strong>.
+              My dual passion lies in writing clean, performant, scalable code and designing high-impact visual
+              communications that leave a lasting mark.
+            </p>
+            <div class="highlight-quote">
+              "Great code powers functionality; great design creates emotion. I strive to master both."
+            </div>
+          </div>
+
+          <div class="about-card feature-card reveal-item">
+            <div class="card-icon-header">
+              <div class="card-glow-icon cyan">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <span class="card-index">02</span>
+            </div>
+            <h3 class="card-heading">Web Development Mastery</h3>
+            <p class="card-text">
+              From responsive frontend layouts to dynamic web applications, I build accessible, blazing-fast interfaces
+              with modern JavaScript, React, and semantic HTML/CSS. Every pixel is purposeful and every animation is
+              smooth.
+            </p>
+            <ul class="feature-bullets">
+              <li><span class="bullet-check">✓</span> Responsive across Mobile, Tablet, & 4K screens</li>
+              <li><span class="bullet-check">✓</span> Optimized performance and modern UI micro-interactions</li>
+              <li><span class="bullet-check">✓</span> Clean code structure and component reusability</li>
+            </ul>
+          </div>
+
+          <div class="about-card feature-card reveal-item">
+            <div class="card-icon-header">
+              <div class="card-glow-icon pink">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m4.93 4.93 4.24 4.24"></path>
+                  <path d="m14.83 9.17 4.24-4.24"></path>
+                  <path d="m14.83 14.83 4.24 4.24"></path>
+                  <path d="m9.17 14.83-4.24 4.24"></path>
+                </svg>
+              </div>
+              <span class="card-index">03</span>
+            </div>
+            <h3 class="card-heading">Graphic & UI/UX Design</h3>
+            <p class="card-text">
+              Armed with Figma, Photoshop, and Illustrator, I craft cohesive brand identities, modern marketing banners,
+              social media creatives, and intuitive wireframes that elevate user satisfaction and visual engagement.
+            </p>
+            <ul class="feature-bullets">
+              <li><span class="bullet-check">✓</span> High-fidelity Figma prototypes & wireframes</li>
+              <li><span class="bullet-check">✓</span> Eye-catching visual assets, posters & typography</li>
+              <li><span class="bullet-check">✓</span> Distinctive brand logos and vector identity sets</li>
+            </ul>
+          </div>
+
+          <div class="about-card feature-card reveal-item">
+            <div class="card-icon-header">
+              <div class="card-glow-icon amber">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <span class="card-index">04</span>
+            </div>
+            <h3 class="card-heading">B.Tech CSE Core</h3>
+            <p class="card-text">
+              Strong grounding in algorithmic problem solving, Data Structures, Database Management, and Object-Oriented
+              Principles. This academic engineering backbone allows me to write reliable, logical, and robust code.
+            </p>
+            <ul class="feature-bullets">
+              <li><span class="bullet-check">✓</span> Strong foundations in Computer Science principles</li>
+              <li><span class="bullet-check">✓</span> Algorithmic efficiency and structured architecture</li>
+              <li><span class="bullet-check">✓</span> Continuous curiosity for emerging technologies</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quick Info Banner -->
+        <div class="info-banner reveal-item">
+          <div class="info-item">
+            <span class="info-label">Degree</span>
+            <span class="info-value">B.Tech CSE</span>
+          </div>
+          <div class="info-divider"></div>
+          <div class="info-item">
+            <span class="info-label">Specialization</span>
+            <span class="info-value">Web Dev & Graphic Design</span>
+          </div>
+          <div class="info-divider"></div>
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-value">India 🇮🇳</span>
+          </div>
+          <div class="info-divider"></div>
+          <div class="info-item">
+            <span class="info-label">Status</span>
+            <span class="info-value highlight-green">Available Immediately</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">My Expertise</div>
+          <h2 class="section-title">Technical & <span class="gradient-text">Creative Arsenal</span></h2>
+          <p class="section-subtitle">Deeply honed abilities spanning modern software development stacks and creative
+            design suites.</p>
+        </div>
+
+        <!-- Skill Filter Tabs -->
+        <div class="skills-tab-nav">
+          <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+          <button class="skill-tab-btn" data-filter="dev">💻 Web Development</button>
+          <button class="skill-tab-btn" data-filter="design">🎨 Graphic Design & UI/UX</button>
+          <button class="skill-tab-btn" data-filter="cs">🧠 CSE Core & Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Web Dev Skill 1 -->
+          <div class="skill-card dev reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap html">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l8 4-3 14-5 2-5-2-3-14 8-4z" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">HTML5 & Semantic Web</h4>
+                <span class="skill-level">Expert</span>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 95%;"></div>
+            </div>
+            <p class="skill-desc">Accessible, SEO-optimized markup, modern APIs, rich semantics & media integrations.
+            </p>
+          </div>
+
+          <!-- Web Dev Skill 2 -->
+          <div class="skill-card dev reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap css">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16l-2 14-6 2-6-2L4 4z" />
+                  <path d="M8 8h8l-1 6-3 1-3-1" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">CSS3, Flexbox & Grid</h4>
+                <span class="skill-level">Expert</span>
+              </div>
+              <span class="skill-percent">96%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 96%;"></div>
+            </div>
+            <p class="skill-desc">Glassmorphism, fluid animations, responsive layouts, CSS custom variables & modern
+              design tokens.</p>
+          </div>
+
+          <!-- Web Dev Skill 3 -->
+          <div class="skill-card dev reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap js">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">JavaScript (ES6+)</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Async/Await, DOM manipulation, state logic, Fetch/REST APIs, event-driven web apps.
+            </p>
+          </div>
+
+          <!-- Web Dev Skill 4 -->
+          <div class="skill-card dev reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap react">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)" />
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)" />
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)" />
+                  <circle cx="12" cy="12" r="1.5" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">React.js & Frontend</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 88%;"></div>
+            </div>
+            <p class="skill-desc">Component-driven architecture, custom hooks, reactive state handling, SPA navigation.
+            </p>
+          </div>
+
+          <!-- Design Skill 1 -->
+          <div class="skill-card design reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap figma">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+                  <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+                  <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+                  <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+                  <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Figma & UI/UX Prototyping</h4>
+                <span class="skill-level">Expert</span>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 95%;"></div>
+            </div>
+            <p class="skill-desc">Wireframing, interactive prototypes, auto-layouts, design systems, and developer
+              handoffs.</p>
+          </div>
+
+          <!-- Design Skill 2 -->
+          <div class="skill-card design reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap ps">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M9 8h4a2 2 0 0 1 0 4H9v4" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Adobe Photoshop</h4>
+                <span class="skill-level">Master</span>
+              </div>
+              <span class="skill-percent">94%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 94%;"></div>
+            </div>
+            <p class="skill-desc">Photo manipulation, digital posters, social media banners, retouching, and visual
+              assets.</p>
+          </div>
+
+          <!-- Design Skill 3 -->
+          <div class="skill-card design reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap ai">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l8 18h-4l-4-9-4 9H4l8-18z" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Adobe Illustrator</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Vector illustration, corporate logos, branding guidelines, iconography, and
+              typography.</p>
+          </div>
+
+          <!-- Design Skill 4 -->
+          <div class="skill-card design reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap brand">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3.6 9h16.8M3.6 15h16.8" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Brand Identity & Visuals</h4>
+                <span class="skill-level">Expert</span>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 92%;"></div>
+            </div>
+            <p class="skill-desc">Color psychology, modern aesthetic palettes, typography pairing, and marketing
+              collateral.</p>
+          </div>
+
+          <!-- CS Skill 1 -->
+          <div class="skill-card cs reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap cse">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Data Structures & Algo (DSA)</h4>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <span class="skill-percent">84%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 84%;"></div>
+            </div>
+            <p class="skill-desc">Array logic, trees, graphs, sorting, searching, time & space complexity analysis.</p>
+          </div>
+
+          <!-- CS Skill 2 -->
+          <div class="skill-card cs reveal-item">
+            <div class="skill-header">
+              <div class="skill-icon-wrap git">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="18" r="3" />
+                  <circle cx="6" cy="6" r="3" />
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7" />
+                  <line x1="6" y1="9" x2="6" y2="21" />
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Git, GitHub & Version Control</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Branching, merge workflows, pull requests, open source collaboration, CI/CD basics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WEB PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Featured Work</div>
+          <h2 class="section-title">Web Development <span class="gradient-text">Showcase</span></h2>
+          <p class="section-subtitle">Real-world applications built with clean code, modern architecture, and dynamic
+            user interfaces.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal-item" id="project1">
+            <div class="project-image-container">
+              <img src="assets/project1.jpg" alt="NeuroLytix AI Intelligence Platform" class="project-img">
+              <div class="project-overlay">
+                <div class="overlay-actions">
+                  <a href="#projects" class="overlay-btn live-btn" title="Live Preview">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn github-btn"
+                    title="View Source Code">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                    <span>Code</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-badge">Featured AI Web App</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category">Full-Stack & Cloud</span>
+                <span class="project-date">2026</span>
+              </div>
+              <h3 class="project-title">NeuroLytix — AI Model Telemetry & Analytics Platform</h3>
+              <p class="project-summary">
+                A high-performance SaaS analytics portal providing machine learning researchers with real-time inference
+                monitoring, live model health dashboards, loss graph visualization, and automated data pipeline
+                configurations.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Canvas Charts</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal-item" id="project2">
+            <div class="project-image-container">
+              <img src="assets/project2.jpg" alt="DevNexus Developer Hub & Marketplace" class="project-img">
+              <div class="project-overlay">
+                <div class="overlay-actions">
+                  <a href="#projects" class="overlay-btn live-btn" title="Live Preview">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn github-btn"
+                    title="View Source Code">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                    <span>Code</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-badge cyan-badge">Marketplace & Community</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category">Web Platform & E-Commerce</span>
+                <span class="project-date">2026</span>
+              </div>
+              <h3 class="project-title">DevNexus — Modern Developer & Designer Digital Hub</h3>
+              <p class="project-summary">
+                An interactive e-commerce and resource marketplace where engineers discover glowing UI components, React
+                authentication flows, serverless API backends, and Figma UI kits with dynamic checkout states and
+                reviews.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript ES6+</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">Responsive UI</span>
+                <span class="tech-tag">LocalStorage</span>
+                <span class="tech-tag">UI/UX System</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRAPHIC DESIGN GALLERY (WITH LIGHTBOX) -->
+    <section class="section graphics-section" id="graphics">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag pink-tag">Creative Portfolio</div>
+          <h2 class="section-title">Graphic Design & <span class="gradient-text-alt">Visual Artistry</span></h2>
+          <p class="section-subtitle">Click any design to examine high-resolution details, typography systems, and
+            creative process notes in the interactive lightbox.</p>
+        </div>
+
+        <div class="graphics-grid">
+          <!-- Graphic 1 -->
+          <div class="graphic-card reveal-item" data-image="assets/design1.jpg"
+            data-title="Nexus Cyber — Brand Identity & Vector System" data-category="Brand Identity & Logo Design"
+            data-tools="Adobe Illustrator, Photoshop"
+            data-desc="Complete corporate visual identity guidelines, modern neon-foil embossed business cards, stationery, typography rules, and vector mark created for next-gen cyber technology startups.">
+            <div class="graphic-image-wrap">
+              <img src="assets/design1.jpg" alt="Nexus Cyber Brand Identity Design" class="graphic-img">
+              <div class="graphic-hover-overlay">
+                <span class="view-pill">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  View Full Artwork
+                </span>
+              </div>
+            </div>
+            <div class="graphic-info">
+              <span class="graphic-cat">Brand Identity & Collateral</span>
+              <h3 class="graphic-name">Nexus Cyber — Brand Identity & Stationery</h3>
+              <div class="graphic-tags">
+                <span class="tool-tag">Adobe Illustrator</span>
+                <span class="tool-tag">Photoshop</span>
+                <span class="tool-tag">Logo Grid</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Graphic 2 -->
+          <div class="graphic-card reveal-item" data-image="assets/design2.jpg"
+            data-title="'Future of Code & Creativity' — Typographic Art Poster"
+            data-category="Poster Art & Graphic Design" data-tools="Adobe Photoshop, Adobe Illustrator, 3D Chrome"
+            data-desc="A futuristic brutalist Swiss design poster exploring the collision of algorithmic code and creative expression. Combines holographic chrome 3D abstract forms with high-contrast typography and digital syntax grids.">
+            <div class="graphic-image-wrap">
+              <img src="assets/design2.jpg" alt="Future of Code Poster Graphic Design" class="graphic-img">
+              <div class="graphic-hover-overlay">
+                <span class="view-pill">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  View Full Artwork
+                </span>
+              </div>
+            </div>
+            <div class="graphic-info">
+              <span class="graphic-cat">Poster & Typographic Art</span>
+              <h3 class="graphic-name">"Future of Code & Creativity" Poster</h3>
+              <div class="graphic-tags">
+                <span class="tool-tag">Liquid Chrome 3D</span>
+                <span class="tool-tag">Brutalist Typography</span>
+                <span class="tool-tag">Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Graphic 3 -->
+          <div class="graphic-card reveal-item" data-image="assets/design3.jpg"
+            data-title="Aether Mobile Banking & Crypto UI/UX" data-category="Mobile App UI/UX Design"
+            data-tools="Figma, UI Prototyping"
+            data-desc="Award-worthy fintech mobile application crafted with dark mode glassmorphic interfaces, interactive spending analytics, dynamic neon crypto balance cards, and thumb-friendly navigation patterns.">
+            <div class="graphic-image-wrap">
+              <img src="assets/design3.jpg" alt="Aether Mobile Banking UI/UX Design" class="graphic-img">
+              <div class="graphic-hover-overlay">
+                <span class="view-pill">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  View Full Artwork
+                </span>
+              </div>
+            </div>
+            <div class="graphic-info">
+              <span class="graphic-cat">Mobile UI/UX Design</span>
+              <h3 class="graphic-name">Aether Mobile Banking & Crypto UI</h3>
+              <div class="graphic-tags">
+                <span class="tool-tag">Figma</span>
+                <span class="tool-tag">Fintech UI</span>
+                <span class="tool-tag">Mobile Prototyping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & JOURNEY SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Background & Journey</div>
+          <h2 class="section-title">Education & <span class="gradient-text">Milestones</span></h2>
+          <p class="section-subtitle">Academic foundations in Computer Science paired with self-driven practical
+            craftsmanship.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot-container">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-badge-row">
+                <span class="timeline-year">Present</span>
+                <span class="timeline-type degree">Degree Program</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Technology (B.Tech) — Computer Science & Engineering</h3>
+              <p class="timeline-institution">Engineering University / College</p>
+              <p class="timeline-desc">
+                Engaged in deep coursework covering Data Structures & Algorithms, Object-Oriented Programming, Database
+                Management Systems (DBMS), Operating Systems, Computer Networks, and Web Engineering. Developing
+                algorithmic problem solving and software design disciplines.
+              </p>
+              <div class="timeline-skills-list">
+                <span>DSA</span>
+                <span>OOP</span>
+                <span>DBMS</span>
+                <span>Web Technologies</span>
+                <span>Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot-container">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-badge-row">
+                <span class="timeline-year">2024 - 2026</span>
+                <span class="timeline-type project">Craftsmanship</span>
+              </div>
+              <h3 class="timeline-title">Full-Stack Web Development & Modern Frontend Engineering</h3>
+              <p class="timeline-institution">Self-Directed & Project Mastery</p>
+              <p class="timeline-desc">
+                Architected 20+ responsive web projects, single-page web applications, and interactive UI component
+                systems. Mastered semantic HTML5, modern CSS3 layout paradigms, JavaScript ES6+, React, and RESTful API
+                integrations.
+              </p>
+              <div class="timeline-skills-list">
+                <span>Frontend Architecture</span>
+                <span>Responsive Systems</span>
+                <span>REST APIs</span>
+                <span>Git Workflows</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot-container">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-badge-row">
+                <span class="timeline-year">2023 - Present</span>
+                <span class="timeline-type creative">Creative Direction</span>
+              </div>
+              <h3 class="timeline-title">Graphic Design, Visual Identity & UI/UX Mastery</h3>
+              <p class="timeline-institution">Creative Design Studio & Freelance</p>
+              <p class="timeline-desc">
+                Designed comprehensive brand systems, logo vectors, event posters, and high-fidelity mobile & desktop
+                UI/UX prototypes using Figma, Adobe Photoshop, and Illustrator for campus events, freelance clients, and
+                personal innovation showcases.
+              </p>
+              <div class="timeline-skills-list">
+                <span>Figma UI/UX</span>
+                <span>Photoshop</span>
+                <span>Illustrator</span>
+                <span>Brand Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Let's Connect</div>
+          <h2 class="section-title">Ready to Start a <span class="gradient-text">Project Together?</span></h2>
+          <p class="section-subtitle">Whether you have a freelance opportunity, an internship offer, or an ambitious
+            creative idea — my inbox is always open!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Column -->
+          <div class="contact-info-col reveal-item">
+            <div class="contact-glass-card">
+              <h3 class="info-title">Contact Information</h3>
+              <p class="info-text">Feel free to reach out directly through any of the channels below or submit the
+                message form.</p>
+
+              <div class="info-items-list">
+                <a href="mailto:prashantsoni.official.dev@gmail.com" class="info-item-link">
+                  <div class="info-icon email-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-tag">Email Me</span>
+                    <span class="info-val">prashantsoni.official.dev@gmail.com</span>
+                  </div>
+                </a>
+
+                <div class="info-item-link">
+                  <div class="info-icon loc-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-tag">Location</span>
+                    <span class="info-val">India 🇮🇳 (Available Worldwide Remotely)</span>
+                  </div>
+                </div>
+
+                <div class="info-item-link">
+                  <div class="info-icon status-badge-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 14 14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-tag">Working Hours</span>
+                    <span class="info-val">Flexible • Rapid Turnaround</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links-block">
+                <span class="social-heading">Follow & Connect:</span>
+                <div class="social-icon-row">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                    aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                    aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                  <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-btn"
+                    aria-label="Behance">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path
+                        d="M8 12h4m-4-3h3a1.5 1.5 0 0 1 0 3H8zm0 3h3.5a1.5 1.5 0 0 1 0 3H8zM15 13.5a2 2 0 1 0 0-3 2 2 0 0 0 0 3zm-1.5-4h3" />
+                    </svg>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                    aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col reveal-item">
+            <form class="contact-form glass-card" id="contactForm" novalidate>
+              <h3 class="form-title">Send a Direct Message</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="userName" name="userName" class="form-input" placeholder="e.g. Rahul Sharma"
+                    required>
+                  <span class="error-msg" id="nameError">Please enter your name</span>
+                </div>
+                <div class="form-group">
+                  <label for="userEmail" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="userEmail" name="userEmail" class="form-input"
+                    placeholder="e.g. rahul@example.com" required>
+                  <span class="error-msg" id="emailError">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectType" class="form-label">What are you looking for?</label>
+                <select id="projectType" name="projectType" class="form-input form-select">
+                  <option value="web-dev">Full-Stack Web Development</option>
+                  <option value="graphic-design">Graphic Design & Brand Identity</option>
+                  <option value="ui-ux">UI/UX Prototyping (Figma)</option>
+                  <option value="internship">Internship / Job Opportunity</option>
+                  <option value="other">Other Collaboration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">Message Details <span class="required">*</span></label>
+                <textarea id="userMessage" name="userMessage" rows="5" class="form-input form-textarea"
+                  placeholder="Tell me about your project goals, ideas, timeline, or question..." required></textarea>
+                <div class="form-helper-row">
+                  <span class="error-msg" id="messageError">Please enter a message (at least 10 characters)</span>
+                  <span class="char-counter" id="charCounter">0 / 500</span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="spinner" id="formSpinner"></span>
+                <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-status-alert" id="formAlert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL FOR GRAPHIC DESIGN GALLERY -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content-card">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="lightbox-image-box">
+        <img src="" alt="Expanded Design Artwork" id="lightboxImage" class="lightbox-img">
+      </div>
+
+      <div class="lightbox-details">
+        <span class="lightbox-category" id="lightboxCategory">Category</span>
+        <h3 class="lightbox-title" id="lightboxTitle">Artwork Title</h3>
+        <p class="lightbox-desc" id="lightboxDesc">Artwork description and design methodology details.</p>
+        <div class="lightbox-tools-box">
+          <span class="tools-label">Tools Used:</span>
+          <span class="tools-text" id="lightboxTools">Figma, Photoshop, Illustrator</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon">✓</div>
+    <div class="toast-body">
+      <span class="toast-title" id="toastTitle">Message Sent!</span>
+      <span class="toast-msg" id="toastMsg">Thank you, Prashant will get back to you shortly.</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-badge">&lt;PS/&gt;</span>
+        <span class="brand-name">PRASHANT<span class="highlight">.SONI</span></span>
+        <p class="footer-tagline">B.Tech CSE Student • Web Developer & Graphic Designer</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#graphics">Graphics</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2026</span> Prashant Soni. Engineered with code, passion & creative pixels.</p>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
